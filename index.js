@@ -1,8 +1,9 @@
 import mongoose from 'mongoose';
-import ComicBook from './model/ComicBook.js';
+import ComicBook from './model/ComicBook.js';import dotenv from 'dotenv';
 
-mongoose.connect('mongodb+srv://morganoms:s98xwUp@cluster0.701azfk.mongodb.net/CollectionApp?retryWrites=true&w=majority&appName=Cluster0');
+dotenv.config();
 
+mongoose.connect(process.env.MONGODB_URI);
 
 const firstComic = await ComicBook.findById("6892db7166fa109b69cd8afc").exec();
 console.log(firstComic);
