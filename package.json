@@ -1,0 +1,30 @@
+{
+  "name": "catalog-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morgan-oms/catalog-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morgan-oms/catalog-api/issues"
+  },
+  "homepage": "https://github.com/morgan-oms/catalog-api#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongodb": "^6.18.0",
+    "mongoose": "^8.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
