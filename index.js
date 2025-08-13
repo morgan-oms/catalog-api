@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import ComicBook from './model/ComicBook.js';import dotenv from 'dotenv';
+import ComicBook from './src/model/ComicBook.js';import dotenv from 'dotenv';
 
 dotenv.config();
 
