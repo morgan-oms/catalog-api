@@ -2,6 +2,7 @@ import { ComicRepository } from '../repository/comic.repository.js';
 
 export const ComicService = {
   async create(data) {
+    if (!data.owner) throw new Error('VALIDATION_OWNER_REQUIRED');
     data.title = data.title?.trim();
     return ComicRepository.create(data);
   },
