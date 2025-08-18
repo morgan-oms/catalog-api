@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import comicRoutes from './route/comic.route.js';
 import cors from 'cors';
+import helmet from 'helmet';
 import authRoutes from './route/auth.route.js';
 import userRoutes from './route/user.route.js'
 import { errorHandler } from './middleware/error.js';
