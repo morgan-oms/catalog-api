@@ -13,6 +13,7 @@ export const createComicSchema = z.object({
   writer:      z.string().min(1),
   comic_type:  z.string().min(1),
   image:       z.string().min(1),
+  read:        z.boolean()
 }).strict();
 
 export const updateComicSchema = createComicSchema.partial();
